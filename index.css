@@ -1,0 +1,203 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 770px) {
+
+  .parent{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-areas: "header"
+                          "section1"
+                          "section2"
+                          "section3"
+                          "section4"
+                          "section5"
+                          "section6"
+                          "footer";
+  }
+  
+  .header{
+    grid-area: header;
+    background-color: blanchedalmond ;
+    height: 10vh;
+    border: 1px solid black;
+    
+  }
+  .section1{
+    grid-area: section1;
+    background-color: rgb(102, 68, 16) ;
+    height: 13vh;
+    border: 1px solid black;
+  }
+  .section2{
+    grid-area: section2;
+    background-color: rgb(105, 84, 52) ;
+    height: 13vh;
+    border: 1px solid black;
+  }
+  .section3{
+    grid-area: section3;
+    background-color: rgba(130, 105, 67, 0.788) ;
+    height: 13vh;
+    border: 1px solid black;
+  }
+  .section4{
+    grid-area: section4;
+    background-color: rgba(195, 124, 18, 0.775) ;
+    height: 13vh;
+    border: 1px solid black;
+  }
+  .section5{
+    grid-area: section5;
+    background-color: rgb(172, 158, 136) ;
+    height: 13vh;
+    border: 1px solid black;
+  }
+  .section6{
+    grid-area: section6;
+    background-color: beige ;
+    height: 13vh;
+    border: 1px solid black;
+  }
+  .footer{
+    grid-area: footer;
+    background-color: rgb(179, 125, 44) ;
+    height: 10vh;
+    border: 1px solid black;
+  }
+  
+}
+
+@media only screen and (min-width: 400px) and (max-width: 768px){
+  .parent{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: "header header"
+                          "section1 section2"
+                          "section3 section4"
+                          "section5 section6"
+                          "footer footer";
+  }
+  
+  .header{
+    grid-area: header;
+    background-color: blanchedalmond ;
+    height: 10vh;
+    border: 1px solid black;
+    
+  }
+  .section1{
+    grid-area: section1;
+    background-color: rgb(102, 68, 16) ;
+    height: 26.6vh;
+    border: 1px solid black;
+  }
+  .section2{
+    grid-area: section2;
+    background-color: rgb(105, 84, 52) ;
+    height: 26.6vh;
+    border: 1px solid black;
+  }
+  .section3{
+    grid-area: section3;
+    background-color: rgba(130, 105, 67, 0.788) ;
+    height: 26.6vh;
+    border: 1px solid black;
+  }
+  .section4{
+    grid-area: section4;
+    background-color: rgba(195, 124, 18, 0.775) ;
+    height: 26.6vh;
+    border: 1px solid black;
+  }
+  .section5{
+    grid-area: section5;
+    background-color: rgb(172, 158, 136) ;
+    height: 26.6vh;
+    border: 1px solid black;
+  }
+  .section6{
+    grid-area: section6;
+    background-color: beige ;
+    height: 26.6vh;
+    border: 1px solid black;
+  }
+  .footer{
+    grid-area: footer;
+    background-color: rgb(179, 125, 44) ;
+    height: 10vh;
+    border: 1px solid black;
+  }
+
+}
+
+
+@media only screen and (min-width: 770px) {
+
+  .parent{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas: "header header header header"
+                          "section1 section2 section3 section4"
+                          "section1 section5 section5 section6"
+                          "footer footer footer footer";
+  }
+  
+  .header{
+    grid-area: header;
+    background-color: blanchedalmond ;
+    height: 10vh;
+    border: 1px solid black;
+    
+  }
+  .section1{
+    grid-area: section1;
+    background-color: rgb(102, 68, 16) ;
+    height: 80vh;
+    border: 1px solid black;
+  }
+  .section2{
+    grid-area: section2;
+    background-color: rgb(105, 84, 52) ;
+    height: 40vh;
+    border: 1px solid black;
+  }
+  .section3{
+    grid-area: section3;
+    background-color: rgba(130, 105, 67, 0.788) ;
+    height: 40vh;
+    border: 1px solid black;
+  }
+  .section4{
+    grid-area: section4;
+    background-color: rgba(195, 124, 18, 0.775) ;
+    height: 40vh;
+    border: 1px solid black;
+  }
+  .section5{
+    grid-area: section5;
+    background-color: rgb(172, 158, 136) ;
+    height: 40vh;
+    border: 1px solid black;
+  }
+  .section6{
+    grid-area: section6;
+    background-color: beige ;
+    height: 40vh;
+    border: 1px solid black;
+  }
+  .footer{
+    grid-area: footer;
+    background-color: rgb(179, 125, 44) ;
+    height: 10vh;
+    border: 1px solid black;
+  }
+
+}
